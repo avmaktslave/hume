@@ -752,6 +752,68 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+header.site-header {
+	position: relative;
+	padding: 1em;
+	font-family: "Source Sans Pro", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+	color: #fff;
+	background-color: #002254;
+}
+
+@media screen and (min-width: 600px) {
+	header.site-header {
+		padding: 1em 2em;
+	}
+}
+
+header.site-header .site-branding {
+	min-height: 65px;
+}
+
+header.site-header .site-branding .site-title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.6em;
+	font-weight: 900;
+	line-height: 1em;
+}
+
+header.site-header .site-branding .site-title a {
+	color: white;
+	text-decoration: none;
+}
+
+header.site-header .site-branding .site-title a:hover, header.site-header .site-branding .site-title a:focus {
+	text-decoration: underline;
+}
+
+header.site-header .site-branding .site-description {
+	margin: 0;
+	font-size: .9em;
+	font-style: italic;
+	font-weight: 100;
+}
+
+@media screen and (min-width: 900px) {
+	.site-header {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+	.site-branding {
+		width: 35%;
+	}
+	.main-navigation {
+		width: 55%;
+	}
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
