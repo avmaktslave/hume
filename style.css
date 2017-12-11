@@ -424,7 +424,7 @@ img {
 }
 
 figure {
-	margin: 1em 0;
+	margin: 0;
 	/* Extra wide images within figure tags don't overflow the content area. */
 }
 
@@ -754,12 +754,22 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+.header-image {
+	max-height: 60vh;
+	overflow: hidden;
+}
+
+.header-image img {
+	display: block;
+	width: 100vw;
+}
+
 header.site-header {
 	position: relative;
 	padding: 1em;
 	font-family: "Source Sans Pro", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
 	color: #fff;
-	background-color: #002254;
+	background-color: #23003e;
 }
 
 @media screen and (min-width: 600px) {
@@ -769,7 +779,34 @@ header.site-header {
 }
 
 header.site-header .site-branding {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	min-height: 65px;
+}
+
+header.site-header .site-branding .custom-logo-link {
+	margin-right: 1em;
+}
+
+header.site-header .site-branding .custom-logo-link img {
+	display: block;
+	height: 65px;
+	width: auto;
+}
+
+header.site-header .site-branding .site-branding__text {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 65px;
 }
 
 header.site-header .site-branding .site-title {
