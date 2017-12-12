@@ -520,15 +520,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #704ED3;
 }
 
 a:visited {
-	color: purple;
+	color: #B44B4B;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #b51c35;
 }
 
 a:focus {
@@ -537,6 +537,24 @@ a:focus {
 
 a:hover, a:active {
 	outline: 0;
+}
+
+.page-content a,
+.entry-content a,
+.entry-summary a,
+.comment-content a {
+	text-decoration: none;
+	border-bottom: 3px solid #b51c35;
+}
+
+.page-content a:focus, .page-content a:hover,
+.entry-content a:focus,
+.entry-content a:hover,
+.entry-summary a:focus,
+.entry-summary a:hover,
+.comment-content a:focus,
+.comment-content a:hover {
+	color: #b51c35;
 }
 
 /*--------------------------------------------------------------
@@ -591,7 +609,7 @@ a:hover, a:active {
 	clip: auto !important;
 	-webkit-clip-path: none;
 	        clip-path: none;
-	color: #21759b;
+	color: #000;
 	display: block;
 	font-size: 17.5px;
 	font-size: 1.09375rem;
@@ -935,6 +953,72 @@ button.dropdown-toggle {
 
 .hentry {
 	margin: 0 0 1.5em;
+}
+
+.entry-header {
+	font-family: "Source Sans Pro", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+}
+
+.cat-links {
+	font-size: 90%;
+	font-weight: 700;
+}
+
+.cat-links a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #b51c35;
+}
+
+.cat-links a:focus, .cat-links a:hover {
+	background-color: #b51c35;
+	color: #fff;
+}
+
+.entry-title {
+	margin: .125em 0 .25em;
+	font-size: 2.5em;
+	color: #404040;
+}
+
+@media screen and (min-width: 900px) {
+	.entry-title {
+		font-size: 3em;
+	}
+}
+
+.entry-title a {
+	text-decoration: none;
+	color: #404040;
+}
+
+.entry-title a:hover {
+	border-bottom: 5px solid #b51c35;
+}
+
+.entry-meta {
+	font-size: 90%;
+}
+
+.entry-meta a {
+	font-weight: 700;
+	text-decoration: none;
+	color: #000;
+}
+
+.entry-meta a:focus, .entry-meta a:hover {
+	border-bottom: 3px solid #b51c35;
+}
+
+.byline::after {
+	content: "|";
+	margin: 0 .5em;
+}
+
+.comments-link::before,
+.edit-link::before {
+	content: "|";
+	margin: 0 .5em;
 }
 
 .updated:not(.published) {
