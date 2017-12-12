@@ -44,7 +44,7 @@ if ( ! function_exists( 'humescores_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'humescores' ),
+			'primary' => esc_html__( 'Header', 'humescores' ),
 		) );
 
 		/*
@@ -177,7 +177,11 @@ function humescores_scripts() {
 
 	wp_enqueue_style( 'humescores-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'humescores-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'humescores-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+	wp_localize_script( 'humescores-navigation', 'humescoresScreenReaderText', array(
+		'expand'  => __( 'Expand child menu', 'humescores' ),
+		'collapse' => __( 'Collaps child menu', 'humescores' )
+	));
 
 	wp_enqueue_script( 'humescores-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
