@@ -1200,12 +1200,163 @@ button.dropdown-toggle {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-.comment-content a {
-	word-wrap: break-word;
+.comments-area {
+	width: 100%;
+	margin: 3em 0;
+	padding: 1.5em 0;
+	border-top: 1px solid #cccccc;
 }
 
-.bypostauthor {
+.comments-title {
+	margin-bottom: 2em;
+	font-size: 2.5em;
+	font-weight: 900;
+}
+
+.comment-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.comment-list ol {
+	list-style-type: none;
+}
+
+.comment-body {
+	border-bottom: 1px solid #c3c3c3;
+	margin-bottom: 3em;
+}
+
+.comment-meta {
+	position: relative;
+	margin-left: 70px;
+	font-family: "Source Sans Pro", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+	font-size: 80%;
+}
+
+.comment-meta a,
+.comment-form a {
+	text-decoration: none;
+	border: none;
+}
+
+.comment-meta a:hover, .comment-meta a:focus,
+.comment-form a:hover,
+.comment-form a:focus {
+	text-decoration: underline;
+}
+
+.comment .avatar {
+	position: absolute;
+	top: 5px;
+	left: -70px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.children {
+	margin-left: 1em;
+	padding-left: 0;
+}
+
+@media screen and (min-width: 900px) {
+	.children {
+		margin-left: 2em;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.no-sidebar .children {
+		margin-left: 2em;
+	}
+	.no-sidebar .children .comment-meta {
+		margin-left: 80px;
+		font-size: 90%;
+	}
+	.no-sidebar .children .comment .avatar {
+		top: -7px;
+		left: -80px;
+		width: 60px;
+		height: 60px;
+	}
+	.no-sidebar .children .comment-content {
+		margin-left: 80px;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.no-sidebar .children {
+		margin-left: 3em;
+	}
+	.no-sidebar .comment-meta {
+		margin-left: 90px;
+	}
+}
+
+.reply {
+	padding: 2em 0;
+	font-family: "Source Sans Pro", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+	text-align: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.reply a {
+	position: absolute;
+	right: 0;
+	top: 0;
 	display: block;
+	width: 4em;
+	font-size: 1em;
+	text-decoration: none;
+	padding: .5em;
+	text-align: center;
+	border: 1px solid #cccccc;
+	color: #000;
+}
+
+.reply a:hover, .reply a:focus {
+	color: #fff;
+	border-color: #b51c35;
+	background: #b51c35;
+}
+
+.bypostauthor .avatar {
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+	border: 10px solid #b51c35;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.form-submit {
+	padding: 2em 0;
+	font-family: "Source Sans Pro", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+	text-align: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.form-submit input {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 8em;
+	font-size: 1em;
+	text-decoration: none;
+	padding: .5em;
+	text-align: center;
+	border: 1px solid #cccccc;
+	color: #000;
+}
+
+.form-submit input:hover, .form-submit input:focus {
+	color: #fff;
+	border-color: #b51c35;
+	background: #b51c35;
 }
 
 /*--------------------------------------------------------------

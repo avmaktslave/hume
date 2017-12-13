@@ -1,6 +1,172 @@
-.comment-content a {
-	word-wrap: break-word;
+.comments-area {
+	width: 100%;
+	margin: 3em 0;
+	padding: 1.5em 0;
+	border-top: 1px solid hsl(0, 0%, 80%);
 }
-.bypostauthor {
-	display: block;
+
+.comments-title {
+	margin-bottom: 2em;
+	font-size: 2.5em;
+	font-weight: 900;
+}
+
+.comment-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+	ol {
+		list-style-type: none;
+	}
+}
+
+.comment-body {
+	border-bottom: 1px solid #c3c3c3;
+	margin-bottom: 3em;
+}
+
+.comment-meta {
+	position: relative;
+	margin-left: 70px;
+	font-family: $font__sans;
+	font-size: 80%;
+}
+
+.comment-meta,
+.comment-form {
+	a {
+		text-decoration: none;
+		border: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+.comment {
+
+	.avatar {
+		position: absolute;
+		top: 5px;
+		left: -70px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px
+	}
+}
+
+.children {
+	margin-left: 1em;
+	padding-left: 0;
+
+	@media screen and (min-width: $query__medium) {
+		margin-left: 2em;
+	}
+}
+
+.no-sidebar {
+
+	.children {
+
+		@media screen and (min-width: $query__medium) {
+			margin-left: 2em;
+
+			.comment-meta {
+				margin-left: 80px;
+				font-size: 90%;
+			}
+
+			.comment .avatar {
+				top: -7px;
+				left: -80px;
+				width: 60px;
+				height: 60px;
+			}
+
+			.comment-content {
+				margin-left: 80px;
+			}
+		}
+	}
+
+	@media screen and (min-width: $size__max-width) {
+		
+		.children {
+			margin-left: 3em;
+		}
+
+		.comment-meta {
+			margin-left: 90px;
+		}
+	}
+}
+
+.reply {
+
+	padding: 2em 0;
+	font-family: $font__sans;
+	text-align: left;
+	overflow: hidden;
+	position: relative;
+
+	a {
+		position: absolute;
+		right: 0;
+		top: 0;
+		display: block;
+		width: 4em;
+		font-size: 1em;
+		text-decoration: none;
+		padding: .5em;
+		text-align: center;
+		border: 1px solid hsl(0, 0%, 80%);
+		color: #000;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			border-color: $color__interactive;
+			background: $color__interactive;
+		}
+	}
+}
+
+
+.bypostauthor .avatar {
+	box-sizing: content-box;
+	border: 10px solid $color__interactive;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.form-submit {
+	padding: 2em 0;
+	font-family: $font__sans;
+	text-align: left;
+	overflow: hidden;
+	position: relative;
+
+	input {
+		position: absolute;
+		right: 0;
+		top: 0;
+		display: block;
+		width: 8em;
+		font-size: 1em;
+		text-decoration: none;
+		padding: .5em;
+		text-align: center;
+		border: 1px solid hsl(0, 0%, 80%);
+		color: #000;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			border-color: $color__interactive;
+			background: $color__interactive;
+		}
+	}
 }
