@@ -832,7 +832,7 @@ header.site-header {
 	padding: 1em;
 	font-family: "Source Sans Pro", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
 	color: #fff;
-	background-color: #23003e;
+	background-color: #300c4e;
 }
 
 @media screen and (min-width: 600px) {
@@ -1367,7 +1367,7 @@ button.dropdown-toggle {
 	padding: 1em;
 	font-family: "Source Sans Pro", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
 	color: #fff;
-	background-color: #23003e;
+	background-color: #300c4e;
 	text-align: center;
 }
 
