@@ -27,6 +27,14 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
+	<?php 
+	if ( has_post_thumbnail(  ) ) : ?>
+	<figure class="featured-image full-bleed">
+		<?php the_post_thumbnail(); ?>
+	</figure>
+	<?php 
+	endif; ?>
+
 	<section class="post-content">
 		<div class="post-content__wrap">
 			<div class="entry-meta">
