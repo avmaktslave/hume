@@ -1,0 +1,52 @@
+.archive-view {
+	background-color: #eee;
+
+	.post {
+		position: relative;
+		background-color: #fff;
+	}
+
+	.post__content {
+		padding: 2em 2em 2em;
+	}
+
+	@media screen and (min-width: $query__small) {
+		&.has-sidebar {
+			.site-content {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+
+			.content-area {
+				width: $size__ratio-large;
+			}
+
+			.widget-area {
+				width: $size__ratio-small;
+			}
+		}
+	}
+
+}
+
+.continue-reading {
+	position: absolute;
+	right: 1em;
+	bottom: 1em;
+	font-family: $font__sans;
+
+	a {
+		display: block;
+		padding:  .5em 1em;
+		font-size: 90%;
+		text-decoration: none;
+		background: hsl(0, 0%, 85%);
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			background: $color__interactive;
+		}
+	}
+}
