@@ -132,3 +132,19 @@ function humescores_post_navigation() {
 		'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previos', 'humescores' ) . '</span> ' . '<span class="screen-reader-text">' . __( 'Previos post:', 'humescores' ) . '</span> ' . '<span class="post-title">%title</span>',
 		) );
 }
+
+/**
+ * Customize ellipsis at ond of oxcerpts.
+ */
+function humescores_excerpt_more( $more ) {
+	return "...";
+}
+add_filter( 'excerpt_more', 'humescores_excerpt_more' );
+
+/**
+ * Filter excerpt length to 100 words.
+ */
+function humescores_excerpt_length( $length ) {
+	return 100;
+}
+add_filter( 'excerpt_length', 'humescores_excerpt_length' );

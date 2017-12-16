@@ -66,10 +66,8 @@
 				<footer class="entry-footer">
 					<?php humescores_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
-			<?php if ( !is_active_sidebar( 'sidebar-1' ) ) : ?>
 			</div><!--post-content__body-->
 		</div><!--post-content__wrap-->
-		<?php endif; ?>
 
 
 		<?php 
@@ -83,5 +81,4 @@
 		?>
 	</section>
 
-	<?php get_sidebar(); ?>
 </article><!-- #post-<?php the_ID(); ?> -->
