@@ -15,7 +15,7 @@
 	if ( has_post_thumbnail(  ) ) : ?>
 	<figure class="featured-image index-image">
 		<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
-			<?php the_post_thumbnail('humescores-index-img'); ?>
+			<?php the_post_thumbnail( 'humescores-index-img' ); ?>
 		</a>
 	</figure>
 	<?php 
@@ -29,6 +29,7 @@
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			else :
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				echo '<h4>' . CFS()->get( 'intro' ) . '</h4>';
 			endif;
 
 			if ( 'post' === get_post_type() ) : ?>
