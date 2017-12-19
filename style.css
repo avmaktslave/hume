@@ -807,10 +807,11 @@ a:hover, a:active {
 .site-content {
 	max-width: 1200px;
 	margin: 0 auto;
+	min-height: 72vh;
 }
 
 @media screen and (min-width: 600px) {
-	.single .has-sidebar .hentry {
+	.page.has-sidebar .hentry {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -820,17 +821,22 @@ a:hover, a:active {
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
 	}
-	.single .has-sidebar .hentry .entry-content {
+	.page.has-sidebar .hentry .entry-content {
 		width: 100%;
 		-webkit-box-flex: 1;
 		    -ms-flex: 1 0 100%;
 		        flex: 1 0 100%;
 	}
-	.single .has-sidebar .hentry .post-content {
+	.page.has-sidebar .hentry .post-content {
 		width: 60%;
 	}
-	.single .has-sidebar .hentry .widget-area {
+	.page.has-sidebar .hentry .widget-area {
 		width: 30%;
+	}
+	.page.has-sidebar:not(.has-page-sidebar) .hentry {
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
 	}
 }
 

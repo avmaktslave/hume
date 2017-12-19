@@ -9,12 +9,12 @@
 .site-content {
 	max-width: $size__max-width;
 	margin: 0 auto;
+	min-height: 72vh;
 }
 
 @media screen and (min-width: $query__small) {
-	.single {
+	.page.has-sidebar {
 
-		.has-sidebar {
 
 			.hentry {
 				display: flex;
@@ -34,7 +34,11 @@
 					width: $size__ratio-small;
 				}
 			}
-		}
+			&:not(.has-page-sidebar) {
+				.hentry {
+					justify-content: flex-end;
+				}
+			}
 	}
 }
 

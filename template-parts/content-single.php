@@ -18,14 +18,13 @@
 			echo '<h4>' . CFS()->get( 'intro' ) . '</h4>';
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+		endif; ?>
 
-		if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+
 		<div class="entry-meta">
 			<?php humescores_posted_on(); ?>
 		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
+
 	</header><!-- .entry-header -->
 
 	<?php 
@@ -38,9 +37,6 @@
 
 	<section class="post-content">
 		<div class="post-content__wrap">
-			<div class="entry-meta">
-				<?php humescores_posted_on(); ?>
-			</div><!-- .entry-meta -->
 			<div class="post-content__body">
 				<div class="entry-content">
 					<?php
