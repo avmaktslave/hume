@@ -19,13 +19,16 @@ if ( have_posts() ) : ?>
 		?>
 	</header><!-- .page-header -->
 
-<?php endif; ?>
+<?php
+else :
+	get_template_part( 'template-parts/content', 'none' );
+	return;
+endif; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 		<?php
-		if ( have_posts() ) {
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
@@ -43,12 +46,7 @@ if ( have_posts() ) : ?>
 				'next_text' => __( 'Older', 'humescores' ),
 				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'humescores' ) . '</span>',
 				) );
-
-		} else {
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		} ?>
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
