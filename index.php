@@ -41,8 +41,8 @@ get_header(); ?>
 			endwhile;
 
 			the_posts_pagination( array(
-				'prev_text' => __( 'Newer', 'humescores' ),
-				'next_text' => __( 'Older', 'humescores' ),
+				'prev_text' => humescores_get_svg( array( 'icon' => 'arrow-fat-left' ) ) . __( 'Newer', 'humescores' ),
+				'next_text' => __( 'Older', 'humescores' ) . humescores_get_svg( array( 'icon' => 'arrow-fat-right' ) ),
 				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'humescores' ) . '</span>',
 				) );
 			?>
