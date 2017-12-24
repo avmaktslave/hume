@@ -20,11 +20,28 @@
 
 	<footer id="colophon" class="site-footer">
 		<nav class="social-menu">
-		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'social',
-			) );
-		?>
+			<ul class="menu">
+				<li>
+					<a href="https://twitter.com/4tharraofdagon">
+						<?php echo humescores_get_svg( array( 'icon' => 'twitter' ) ); ?>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/leshic">
+						<?php echo humescores_get_svg( array( 'icon' => 'facebook' ) ); ?>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/alexeykaydash/">
+						<?php echo humescores_get_svg( array( 'icon' => 'instagram' ) ); ?>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/avmaktslave">
+						<?php echo humescores_get_svg( array( 'icon' => 'github' ) ); ?>
+					</a>
+				</li>
+			</ul>
 		</nav><!-- .social-menu -->
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'humescores' ) ); ?>"><?php

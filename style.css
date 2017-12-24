@@ -869,6 +869,8 @@ a:hover, a:active {
 .archive-view .page {
 	position: relative;
 	background-color: #fff;
+	-webkit-box-shadow: 0.9em 0.6em 0.9em rgba(179, 179, 179, 0.5);
+	        box-shadow: 0.9em 0.6em 0.9em rgba(179, 179, 179, 0.5);
 }
 
 .archive-view .post__content {
@@ -970,7 +972,7 @@ a:hover, a:active {
 	width: 100vw;
 }
 
-header.site-header {
+.site-header {
 	position: relative;
 	padding: 1em;
 	font-family: "Source Sans Pro", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
@@ -979,29 +981,29 @@ header.site-header {
 }
 
 @media screen and (min-width: 600px) {
-	header.site-header {
+	.site-header {
 		padding: 1em 2em;
 	}
 }
 
-header.site-header .site-branding {
+.site-header .site-branding {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	min-height: 65px;
 }
 
-header.site-header .site-branding .custom-logo-link {
+.site-header .site-branding .custom-logo-link {
 	margin-right: 1em;
 }
 
-header.site-header .site-branding .custom-logo-link img {
+.site-header .site-branding .custom-logo-link img {
 	display: block;
 	height: 65px;
 	width: auto;
 }
 
-header.site-header .site-branding .site-branding__text {
+.site-header .site-branding .site-branding__text {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1015,7 +1017,7 @@ header.site-header .site-branding .site-branding__text {
 	height: 65px;
 }
 
-header.site-header .site-branding .site-title {
+.site-header .site-branding .site-title {
 	margin: 0;
 	padding: 0;
 	font-size: 1.6em;
@@ -1023,16 +1025,16 @@ header.site-header .site-branding .site-title {
 	line-height: 1em;
 }
 
-header.site-header .site-branding .site-title a {
+.site-header .site-branding .site-title a {
 	color: white;
 	text-decoration: none;
 }
 
-header.site-header .site-branding .site-title a:hover, header.site-header .site-branding .site-title a:focus {
+.site-header .site-branding .site-title a:hover, .site-header .site-branding .site-title a:focus {
 	text-decoration: underline;
 }
 
-header.site-header .site-branding .site-description {
+.site-header .site-branding .site-description {
 	margin: 0;
 	font-size: .9em;
 	font-style: italic;
