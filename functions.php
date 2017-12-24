@@ -81,6 +81,9 @@ if ( ! function_exists( 'humescores_setup' ) ) :
 			'width'       => 90,
 			'flex-width'  => true,
 		) );
+
+		/* Editor styles */
+		add_editor_style( array( 'inc/editor-styles.css', humescores_fonts_url() ) );
 	}
 endif;
 add_action( 'after_setup_theme', 'humescores_setup' );

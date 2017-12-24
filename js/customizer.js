@@ -43,7 +43,7 @@
 	// Background color for header and footer.
 	wp.customize( 'theme_bg_color', function( value ) {
 		value.bind( function( to ) {
-			$( '.site-header, .site-footer' ).css( {
+			$( '.site-header, .site-footer, .footer-widgets' ).css( {
 				'background-color': to
 			} );
 		} );

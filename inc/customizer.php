@@ -165,6 +165,7 @@ if ( ! function_exists( 'humescores_header_style' ) ) :
 		if ( '#290440' != $header_bg_color ) { ?>
 			<style type="text/css">
 				.site-header,
+				.footer-widgets,
 				.site-footer {
 					background-color: <?php echo esc_attr( $header_bg_color ); ?>;
 				}
