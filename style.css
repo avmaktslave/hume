@@ -673,7 +673,9 @@ a:hover, a:active {
 .pagination a,
 .pagination span {
 	padding: .5em 1em;
-	background: white;
+	background: #eee;
+	font-size: 1.4em;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .pagination a {

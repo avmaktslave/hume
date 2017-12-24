@@ -41,8 +41,8 @@ get_header(); ?>
 			endwhile;
 
 			the_posts_pagination( array(
-				'prev_text' => humescores_get_svg( array( 'icon' => 'arrow-fat-left', 'fallback' => true ) ) . __( 'Newer', 'humescores' ),
-				'next_text' => __( 'Older', 'humescores' ) . humescores_get_svg( array( 'icon' => 'arrow-fat-right', 'fallback' => true ) ),
+				'prev_text' => humescores_get_svg( array( 'icon' => 'arrow-fat-left', 'fallback' => true ) ),
+				'next_text' => humescores_get_svg( array( 'icon' => 'arrow-fat-right', 'fallback' => true ) ),
 				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'humescores' ) . '</span>',
 				) );
 			?>
