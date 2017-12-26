@@ -273,7 +273,7 @@ function humescores_scripts() {
 	wp_enqueue_script( 'humescores-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
 	wp_localize_script( 'humescores-navigation', 'humescoresScreenReaderText', array(
 		'expand'  => __( 'Expand child menu', 'humescores' ),
-		'collapse' => __( 'Collaps child menu', 'humescores' )
+		'collapse' => __( 'Collapse child menu', 'humescores' )
 	));
 
 	wp_enqueue_script( 'humescores-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), 20171212, true );

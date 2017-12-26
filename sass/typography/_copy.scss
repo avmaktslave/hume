@@ -8,6 +8,11 @@ dfn, cite, em, i {
 
 blockquote {
 	margin: 0 1.5em;
+	font-style: italic;
+	background-color: #D0FADF;
+	border: 1px solid #D0FADF;
+	border-radius: 10px;
+	padding: 0 .5em;
 }
 
 address {

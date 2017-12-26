@@ -327,6 +327,11 @@ dfn, cite, em, i {
 
 blockquote {
 	margin: 0 1.5em;
+	font-style: italic;
+	background-color: #D0FADF;
+	border: 1px solid #D0FADF;
+	border-radius: 10px;
+	padding: 0 .5em;
 }
 
 address {
@@ -675,7 +680,7 @@ a:hover, a:active {
 	padding: .5em 1em;
 	background: #eee;
 	font-size: 1.4em;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+	text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 .pagination a {
