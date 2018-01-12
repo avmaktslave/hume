@@ -552,7 +552,6 @@ a:hover, a:active {
 .entry-summary a,
 .comment-content a {
 	text-decoration: none;
-	border-bottom: 3px solid #b51c35;
 }
 
 .page-content a:focus, .page-content a:hover,
@@ -1098,7 +1097,7 @@ Header Menu
 }
 
 .main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li:focus > ul {
 	left: 100%;
 }
 
@@ -1107,7 +1106,7 @@ Header Menu
 }
 
 .main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:focus > ul {
 	left: auto;
 }
 
@@ -1124,7 +1123,7 @@ Header Menu
 }
 
 .main-navigation a:hover,
-.main-navigation a.focus {
+.main-navigation a:focus {
 	text-decoration: underline;
 }
 
